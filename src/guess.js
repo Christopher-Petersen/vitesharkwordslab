@@ -2,6 +2,7 @@ const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
 //create a function to set up guesses with perameters
 function setupGuesses(element, handleGuess) {
+  console.log(handleGuess)
   //split alphabet into individual letters
   alphabet.split('').forEach((letter) => {
     //for each letter, there is a button element
@@ -14,5 +15,6 @@ function setupGuesses(element, handleGuess) {
     element.append(btn);
   });
 }
+
 
 export default setupGuesses;
